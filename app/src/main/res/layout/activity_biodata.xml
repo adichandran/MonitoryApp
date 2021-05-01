@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiodataActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen30">
+
+    <TextView
+        android:id="@+id/txt_bio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nama"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp25"
+        android:textColor="@color/black3"/>
+
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_bio1"
+        android:layout_marginTop="@dimen/dimen30"
+        android:hint="@string/namaex"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/txt_bio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen30"
+        android:layout_below="@id/txt_nama"
+        android:text="@string/umur"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp25"
+        android:textColor="@color/black3"/>
+
+    <EditText
+        android:id="@+id/txt_bio4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_bio3"
+        android:layout_marginTop="@dimen/dimen30"
+        android:hint="@string/umurex"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_mulai"
+        android:layout_marginRight="@dimen/dimen60"
+        android:layout_marginLeft="@dimen/dimen60"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:onClick="btn_selanjutnya"
+        android:text="@string/selanjutnya"
+        android:textAllCaps="false"
+        android:textColor="@color/black3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

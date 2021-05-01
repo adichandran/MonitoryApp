@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:outlineAmbientShadowColor="@color/black3"
+    android:outlineSpotShadowColor="@color/black3"
+    android:orientation="vertical"
+    android:background="@color/white3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen30"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/txt_login1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode Keluarga"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black3"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:id="@+id/txt_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_login1"
+            android:text="Ketikkan kode keluarga yang Ayah Bunda miliki disini"
+            android:textSize="17sp"
+            android:textColor="@color/black3"/>
+
+        <EditText
+            android:id="@+id/kode_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_login2"
+            android:textColorHint="@color/black3"
+            android:background="@drawable/edt_login"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black3"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:hint="@string/hintex"
+            android:fontFamily="@font/rubik_regular"
+            android:textAllCaps="true"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/txt_login3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kode_login"
+            android:text="@string/dengan"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black3"/>
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_login3"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:background="@drawable/btn_mulai"
+            android:onClick="btn_masuk"
+            android:text="@string/masuk"
+            android:textColor="@color/black3"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logobackground"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen40"
+        android:paddingLeft="@dimen/dimen30"
+        android:paddingRight="@dimen/dimen30">
+
+        <TextView
+            android:id="@+id/txt_login4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/belum"
+            android:gravity="center"
+            android:textSize="@dimen/sp18"
+            android:layout_marginBottom="@dimen/dimen10"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_login4"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:background="@drawable/btn_beli"
+            android:text="@string/beli"
+            android:textColor="@color/white3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

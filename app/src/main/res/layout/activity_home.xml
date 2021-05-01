@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen30">
+
+    <TextView
+        android:id="@+id/txt_home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beres"
+        android:textSize="@dimen/sp30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black3"/>
+    <TextView
+        android:id="@+id/txt_home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_home1"
+        android:text="kamu"
+        android:layout_marginLeft="@dimen/dimen4"
+        android:textSize="@dimen/sp30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black3"/>
+    <TextView
+        android:id="@+id/txt_home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_home1"
+        android:text="@string/udah"
+        android:textSize="@dimen/sp30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black3"/>
+
+    <TextView
+        android:id="@+id/txt_home4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiap"
+        android:layout_below="@id/txt_home3"
+        android:textSize="@dimen/sp30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black3"/>
+
+    <TextView
+        android:id="@+id/txt_home5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_home3"
+        android:layout_toRightOf="@id/txt_home4"
+        android:layout_marginLeft="@dimen/dimen4"
+        android:text="kamu"
+        android:textSize="@dimen/sp30"
+        android:textColor="@color/black3"
+        android:fontFamily="@font/nunito_bold"/>
+    <TextView
+        android:id="@+id/txt_home6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ngatur waktu :)"
+        android:layout_below="@id/txt_home4"
+        android:textSize="@dimen/sp30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black3"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_mulai"
+        android:layout_marginRight="@dimen/dimen60"
+        android:layout_marginLeft="@dimen/dimen60"
+        android:layout_marginBottom="@dimen/dimen30"
+        android:text="@string/oke"
+        android:textAllCaps="false"
+        android:textColor="@color/black3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
