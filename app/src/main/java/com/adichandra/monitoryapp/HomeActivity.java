@@ -1,5 +1,13 @@
 package com.adichandra.monitoryapp;
 
+/*
+ * NIM   : 10118015
+ * NAMA  : Adi Chandra Nugraha
+ * KELAS : IF1
+ * TGL   : 1/05/2021
+ * Deskripsi : Membuat Tampilan HomeActivity dan Menampung nilai dari BiodataActivity
+ * */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
